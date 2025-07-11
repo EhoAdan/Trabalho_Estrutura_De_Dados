@@ -3,9 +3,9 @@ from cadastro import Cadastro
 
 cadastro = Cadastro()
 
-dir_profissao = Diretorio("profissao", tipo= "discreto")
-dir_salario = Diretorio("salario", tipo= "continuo")
-dir_cidade = Diretorio("cidade", tipo= "discreto")
+dir_profissao = Diretorio("profissao", "discreto")
+dir_cidade = Diretorio("cidade", "discreto")
+dir_salario = Diretorio("salario", "continuo")
 
 def carregar_dados():
 

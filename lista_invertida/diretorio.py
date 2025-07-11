@@ -1,5 +1,5 @@
 class Diretorio:
-    def __init__(self, campo, tipo="discreto"):
+    def __init__(self, campo, tipo):
         self.campo = campo
         self.tipo = tipo
         self.indice = {}
@@ -30,7 +30,7 @@ class Diretorio:
                 return "0-1999"
             elif valor < 3000:
                 return "2000-2999"
-            elif valor < 4000:
+            elif valor < 5000:
                 return "3000-3999"
             else:
                 return "4000+"
