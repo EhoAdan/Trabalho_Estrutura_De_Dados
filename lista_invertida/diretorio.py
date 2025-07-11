@@ -1,8 +1,8 @@
 class Diretorio:
-    def __init__(self, campo, tipo):
+    def __init__(self, campo, tipo): #Ao ter o "filtro" recebido como parametro, sabemos o que adicionar ao dicionário menor
         self.campo = campo
         self.tipo = tipo
-        self.indice = {}
+        self.indice = {} #Nosso dicionário menor (cada um dos objetos instanciados na main, terão um dicionário desses)
 
     def adicionar(self, registro):
         valor = registro[self.campo]
