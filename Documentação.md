@@ -12,9 +12,10 @@ Dividimos o trabalho em:
 
 - Diretório (onde guardamos as chaves com seus índices, ou seja, a nossa lista invertida em si)
 
-- Cadastro (manipulação da tabela, análogo a classe Controller)
+- Cadastro (manipulação da tabela, análogo a classe Controller, nosso "dicionário maior")
 
-- Main (Iniciliza, recebe dados, conversa com o usuário)
+- Main (Iniciliza, recebe dados, conversa com o usuário, nossos "dicionários menores")
 
-- deve ser acompanhado por documentação que apresente, no mínimo: o projeto de solução do problema e as decisões de projeto ("escolhemos usar multilista porque blablabla", "dividimos em 3 classes x, y e z porque assim blebleblé"...), a modularização adotada. As decisões devem ser descritas, e também justificadas/defendidas.
-Para entregar, coloquem tudo em um único arquivo .ZIP ou equivalente e submetam aqui pelo moodle.
+- A escolha da estrutura foi toda feita pensando em como poderíamos otimizar o uso do código com o menor número possível de linhas, tudo sem aumentar excessivamente o número de dicionários que precisaríamos integrar, dessa forma, uma única função que usa uma certa ID poderia ficar sendo repassada do dicionário total/completo para os dicionários menores, como pode ser visto nos comentários dos diretórios.
+
+Demais justificativas e descrições das decisões podem ser encontradas nos comentários acompanhando o código

@@ -24,7 +24,7 @@ class Diretorio:
             if not self.indice[chave]:
                 del self.indice[chave]
 
-    def _normalizar(self, valor):
+    def _normalizar(self, valor): #Normaliza os valores contínuos dos salários em faixas de salário
         if self.tipo == "continuo":
             if valor < 2000:
                 return "0-1999"

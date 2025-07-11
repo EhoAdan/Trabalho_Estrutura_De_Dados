@@ -22,7 +22,7 @@ def carregar_dados(): #Carga de Dados pedida pelo Prof
         {"id": "10", "nome": "João", "cidade": "Florianópolis", "cargo": "Técnico", "salario": 2000},
     ]
 
-    for i in dic_total: #Cada i aqui é um dicionário da lista acima
+    for i in dic_total: #Cada i aqui é um dicionário da lista acima, cada função 
         cadastro.inserir(i)
         dir_cidade.adicionar(i)
         dir_salario.adicionar(i)
@@ -55,7 +55,7 @@ def buscar_por_ID():
     print(funcionario if funcionario else "Funcionario não encontrado.")
 
 def remover_funcionario():
-    id = input("Digite o id para remover: ")
+    id = input("Digite a ID para remover: ")
     funcionario = cadastro.remover(id) #Puxa as funções de remoção das classes cadastro e diretorio, já que precisamos excluir de todas elas
     if funcionario:
         dir_cidade.remover(funcionario)
@@ -66,7 +66,7 @@ def remover_funcionario():
         print("Funcionário não encontrado.")
 
 def consulta_simples():
-    campo = input("Campo para busca (cidade, cargo, salario): ")
+    campo = input("Digite o campo para busca (cidade, cargo, salario): ")
     valor = input("Valor do campo: ")
     if campo == "salario":
         valor = float(valor)
@@ -85,12 +85,12 @@ def consulta_simples():
         print(cadastro.buscar(id))
 
 def consulta_composta():
-    campo1 = input("Primeiro campo para busca (cidade, cargo, salario): ")
+    campo1 = input("Digite o primeiro campo para busca (cidade, cargo, salario): ")
     valor1 = input("Valor do primeiro campo: ")
     if campo1 == "salario":
         valor1 = float(valor1)
 
-    campo2 = input("Segundo campo para busca (cidade, cargo, salario): ")
+    campo2 = input("Digite o segundo campo para busca (cidade, cargo, salario): ")
     valor2 = input("Valor do segundo campo: ")
     if campo2 == "salario":
         valor2 = float(valor2)

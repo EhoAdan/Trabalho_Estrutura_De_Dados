@@ -1,6 +1,12 @@
 # Trabalho_Estrutura_De_Dados
 Aqui temos um trabalho final para a disciplina de estrutura de dados da faculdade.
 
+Para "rodar" o código, inicie tudo pelo "main.py" e selecione a opção da carga de dados (se não, seu "banco de dados" iniciará vazio).
+
+Depois, é recomendado que selecione a opção de "Exibir todos" e que preste atenção quanto à como nossas chaves e valores são escritos. Uma vez que utilizamos strings para os valores (por simplicidade de implementação), erros de digitação podem acarretar em erros de código ou criação de outras variáveis de valor semelhante (por exemplo, Florianópolis e florianopolis).
+
+Também é recomendado reservar algum tempo para ler a "documentação" do nosso código e prestar atenção quanto aos comentários feitos durante o código
+
 Segue descrição do trabalho abaixo:
 
 Caros,
