@@ -10,3 +10,6 @@ class Cadastro:
 
     def remover(self, id):
         return self.dados.pop(id, None)
+
+    def listar_todos(self):
+        return list(self.dados.values())

@@ -15,12 +15,12 @@ class Diretorio:
         chave = self._normalizar(valor)
         return self.indice.get(chave, set())
     
-    def remover(self, aluno):
-        valor = aluno[self.campo]
+    def remover(self, registro):
+        valor = registro[self.campo]
         chave = self._normalizar(valor)
 
         if chave in self.indice:
-            self.indice[chave].discard(aluno["matricula"])
+            self.indice[chave].discard(registro["id"])
             if not self.indice[chave]:
                 del self.indice[chave]
 
